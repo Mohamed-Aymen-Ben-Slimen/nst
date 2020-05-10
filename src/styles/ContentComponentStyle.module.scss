@@ -1,0 +1,16 @@
+.title{
+  position: absolute;
+  top: 0;
+}
+
+.uploadButton{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.displayedImage{
+  width: 60%;
+  margin: 2%;
+  max-height: 60%;
+}

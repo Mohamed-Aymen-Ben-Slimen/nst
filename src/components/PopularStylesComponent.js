@@ -3,26 +3,38 @@ import globalStyles from '../styles/Global.module.scss';
 import popularStylesList from '../popular_styles_list/PopularStylesList';
 import popularStylesStyles from '../styles/PopularStylesComponentStyle.module.scss';
 import DoneOutlineRoundedIcon from '@material-ui/icons/DoneOutlineRounded';
+import {useSelector, useDispatch} from 'react-redux';
+import * as actions from '../state_management/actions';
 
 const PopularStylesComponent = () => {
 
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const clickHandler =  (event) => {
+    const dispatch = useDispatch();
+
+    const clickHandler =  (event, styleItem) => {
+      //  console.log(styleItem);
         const target = event.target;
         target.classList.add(popularStylesStyles.active);
         if (selectedImage !== null) {
             selectedImage.classList.remove(popularStylesStyles.active);
         }
         setSelectedImage(target);
+
+        dispatch( actions.addStyle( styleItem.url ) );
+
+
+
     };
+
+
 
     const imagesList = popularStylesList.map(
         (style, index) => {
             return(
                 <div className={popularStylesStyles.styleImage} key={index}
                      style={ {backgroundImage: `url('${style.path}')`} }
-                     onClick={clickHandler}
+                     onClick={ (e) =>{ clickHandler(e, style) } }
                 >
                     <div className={popularStylesStyles.innerDiv}>
                         <div className={popularStylesStyles.styleInfo}>
