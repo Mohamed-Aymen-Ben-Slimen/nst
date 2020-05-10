@@ -1,0 +1,56 @@
+
+.flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowCenter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowSpaceAround{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.flexRowTop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.absoluteCentered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.width100{
+  width: 100%;
+}
+
+.width45{
+  width: 45%;
+}
+
+.height100{
+  height: 100%;
+}
+
+.width40{
+  width: 40%;
+}
+
+.width50{
+  width: 50%;
+}
