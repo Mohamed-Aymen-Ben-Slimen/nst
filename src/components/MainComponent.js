@@ -17,12 +17,15 @@ const MainComponent = () => {
 
 
     return (
-        <div className={`${styles.absoluteCentered} ${styles.width100}`}>
+        <div className={`${styles.width100}`}>
 
             <div className={`${styles.flexRowTop} ${styles.width100} ${stylesMain.mainContainer}`}>
             <ContentComponent />
             <StyleComponent />
             </div>
+
+
+
             <ResultComponent/>
         </div>
     )
