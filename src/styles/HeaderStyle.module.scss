@@ -1,0 +1,67 @@
+$textColor : white;
+$hoverColor : #ff4152;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Pacifico&display=swap');
+
+.navContainer{
+
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #2058f6;
+  height: 9vh;
+
+
+  .logo{
+    color: $textColor;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+  }
+  .logo:hover{
+    transform: scale(1.04);
+  }
+
+  .routes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    font-weight: 600;
+
+    .routeItem{
+      margin: 1%;
+      text-align: center;
+      color: $textColor;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s all ease;
+      padding: 6px;
+      overflow: hidden;
+      text-transform: uppercase;
+    }
+    .routeItem:before{
+      content: '';
+      width: 100%;
+      border: $textColor solid 1px;
+      position: absolute;
+      bottom: 0;
+      left: -105% ;
+      transition: 0.5s all ease;
+    }
+
+    .routeItem:hover{
+      color: $hoverColor;
+
+    }
+
+    .routeItem:hover.routeItem:before{
+      left: 0;
+      border-color: $hoverColor;
+    }
+
+  }
+
+}

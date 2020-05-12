@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 .flexColumnCenter{
   display: flex;
@@ -53,4 +54,14 @@
 
 .width50{
   width: 50%;
+}
+
+.globalBackground{
+  background: lighten(#ffff5f, 12%);
+}
+
+.titles{
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+  color: #2058f6;
 }

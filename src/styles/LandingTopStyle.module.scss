@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+.landingTopContainer{
+  height: 90vh;
+  display: block;
+  .skewDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-5deg);
+
+    font-size: 6.4em;
+    line-height: .44;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-shadow: 0 10px 5px rgba(0,0,0,.2);
+
+
+    .title {
+
+      width: 100%;
+      height: 24%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+
+
+
+    }
+
+  }
+
+
+}
+
+.animation1{
+  animation: inter 1s ease;
+  background: #ff4152;
+}
+.animation2{
+  animation: inter2 1.5s ease;
+  background: #97ff38;
+}
+.animation3{
+  animation: inter3 2s ease;
+  background: #dd4aff;
+}
+
+@keyframes inter {
+  from{
+    -webkit-transform: translateX(-104%);
+    -moz-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
+    -o-transform: translateX(-104%);
+  }
+  to{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes inter2 {
+  0%{
+    -webkit-transform: translateX(-104%);
+    -moz-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
+    -o-transform: translateX(-104%);
+  }
+  33%{
+    -webkit-transform: translateX(-104%);
+    -moz-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
+    -o-transform: translateX(-104%);
+  }
+  to{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes inter3 {
+  0%{
+    -webkit-transform: translateX(-104%);
+    -moz-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
+    -o-transform: translateX(-104%);
+  }
+  50%{
+    -webkit-transform: translateX(-104%);
+    -moz-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
+    -o-transform: translateX(-104%);
+  }
+  to{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

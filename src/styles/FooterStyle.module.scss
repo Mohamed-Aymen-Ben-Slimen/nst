@@ -1,0 +1,18 @@
+.footerContainer{
+  background: black;
+  color: white;
+  padding: 30px;
+
+
+
+  .LinkedInIcon{
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.gradientDiv{
+  background: linear-gradient( 180deg , lighten(#ffff5f, 12%), black );
+  height: 40px;
+}

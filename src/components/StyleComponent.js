@@ -5,6 +5,8 @@ import Tab from '@material-ui/core/Tab';
 import PopularStylesComponent from "./PopularStylesComponent";
 import styles from '../styles/Global.module.scss';
 import stylesStyleComp from '../styles/StyleComponentStyles.module.scss';
+import UploadComponent from "./UploadComponent";
+import * as actions from "../state_management/actions";
 
 
 export default function CenteredTabs() {
@@ -16,9 +18,9 @@ export default function CenteredTabs() {
     };
 
     return (
-        <div className={ `${styles.width50} ${styles.height100}` }>
+        <div className={ `${styles.width45} ${styles.height100}` }>
 
-            <h1>Style image</h1>
+            <h1 className={styles.titles}>Style image</h1>
         <Paper >
             <Tabs
                 value={value}
@@ -32,7 +34,13 @@ export default function CenteredTabs() {
         </Paper>
 
             <Paper variant="outlined" className={`${stylesStyleComp.tabsContent} ${styles.flexColumnCenter}`}>
-            { value === 0 ? <PopularStylesComponent/> : null }
+                {value === 0 ?
+                    <PopularStylesComponent/>
+                    :
+                    <div >
+                        <UploadComponent label={'style'} action={actions.addStyle}/>
+                    </div>
+                }
             </Paper>
         </div>
     );

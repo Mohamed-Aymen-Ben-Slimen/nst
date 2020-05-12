@@ -2,18 +2,41 @@
   margin: 40px;
 
   .submitButton{
-    padding: 1% 2%;
+    padding: 20px 30px;
+    background: #2058f6;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: #2058f6 solid 4px;
+    font-weight: 550;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  .submitButton:hover{
+    background: transparent;
+    color: #2058f6;
+  }
+  .disbledButton{
+    background: grey;
   }
 
   .resultImage{
     margin: 50px;
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     box-shadow: black 0 0 5px;
   }
 
-  .waiting{
-    
+  .downloadButton{
+    background-color: #09d500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
   }
+
 
 }

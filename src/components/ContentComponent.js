@@ -1,61 +1,48 @@
 import React, {useRef, useEffect} from 'react';
-import Button from '@material-ui/core/Button';
+
 import styles from '../styles/Global.module.scss';
-import {useSelector, useDispatch} from 'react-redux';
+
 import * as actions from '../state_management/actions';
 import contentStyle from '../styles/ContentComponentStyle.module.scss';
+import UploadComponent from "./UploadComponent";
+import Paper from "@material-ui/core/Paper/Paper";
+import Tabs from "@material-ui/core/Tabs/Tabs";
+import Tab from "@material-ui/core/Tab/Tab";
+import stylesStyleComp from "../styles/StyleComponentStyles.module.scss";
+import PopularStylesComponent from "./PopularStylesComponent";
 
 const ContentComponent = () => {
 
-    const imageRef = useRef();
-    const uploadRef = useRef();
+    const [value, setValue] = React.useState(0);
 
-    const dispatch = useDispatch();
-    const contentImage = useSelector( state =>  state.images.content  );
-
-    const uploadHandler = (event) => {
-
-
-        dispatch(actions.addContent( event.target ));
-
-        imageRef.current.setAttribute('src',  URL.createObjectURL(uploadRef.current.files[0]) );
-
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
     };
 
-
-
-
-
-
     return (
-        <div className={`${styles.flexColumnCenter} ${styles.width40} ${styles.height100}`}>
+        <div className={` ${styles.width45} ${styles.height100}`}>
 
-            <h1 className={contentStyle.title}>Content image</h1>
+            <h1 className={styles.titles}>Content image</h1>
 
-            <div >
-            <input
-                accept="image/*"
-                style={ {display: 'none'} }
-                id="content-image"
-                type="file"
-                onChange={ uploadHandler }
-                ref={uploadRef}
-            />
-            <label htmlFor="content-image">
-                {
-                    contentImage === null?
-                        <Button variant="contained" color="primary" component="span">
-                            Upload content image
-                        </Button>
-                        :
-                        <Button variant="contained" color="primary" component="span">
-                            Upload another image
-                        </Button>
+            <Paper >
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    indicatorColor="primary"
+                    textColor="primary"
+                >
+                    <Tab label="Upload image" />
+
+                </Tabs>
+            </Paper>
+
+            <Paper variant="outlined" className={`${stylesStyleComp.tabsContent} ${styles.flexColumnCenter}`}>
+                {value === 0 &&
+                    <UploadComponent  label={'content'} action={actions.addContent}/>
                 }
-            </label>
-            </div>
+            </Paper>
 
-            <img src={''} alt={''} ref={imageRef} className={`${contentStyle.displayedImage}`}/>
+
 
         </div>
     )
