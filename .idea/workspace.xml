@@ -31,7 +31,7 @@
           <entry key="ico" value="1" />
           <entry key="jpg" value="1" />
           <entry key="js" value="78" />
-          <entry key="json" value="3" />
+          <entry key="json" value="4" />
           <entry key="scss" value="50" />
           <entry key="svg" value="1" />
         </counts>
@@ -41,7 +41,7 @@
           <entry key="CSS" value="10" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="3" />
+          <entry key="JSON" value="4" />
           <entry key="JavaScript" value="78" />
           <entry key="SCSS" value="50" />
           <entry key="SVG" value="1" />
@@ -52,6 +52,7 @@
           <entry key="css" value="93" />
           <entry key="html" value="40" />
           <entry key="js" value="8287" />
+          <entry key="json" value="4" />
           <entry key="scss" value="3581" />
         </counts>
       </usages-collector>
@@ -59,6 +60,7 @@
         <counts>
           <entry key="CSS" value="93" />
           <entry key="HTML" value="40" />
+          <entry key="JSON" value="4" />
           <entry key="JavaScript" value="8287" />
           <entry key="SCSS" value="3581" />
         </counts>
@@ -96,11 +98,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/popular_styles_list/PopularStylesList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
               <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -166,6 +177,7 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/build/index.html" />
         <option value="$PROJECT_DIR$/src/popular_styles_list/PopularStylesList.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -206,6 +218,11 @@
             <path>
               <item name="nst" type="b2602c69:ProjectViewProjectNode" />
               <item name="nst" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nst" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -224,12 +241,6 @@
               <item name="nst" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="popular_styles_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nst" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,21 +289,21 @@
       <workItem from="1589040314818" duration="15010000" />
       <workItem from="1589148978306" duration="14880000" />
       <workItem from="1589238267215" duration="15683000" />
-      <workItem from="1589298363951" duration="9309000" />
+      <workItem from="1589298363951" duration="10161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72338000" />
+    <option name="totallyTimeSpent" value="73190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="421" y="0" width="1510" height="1042" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" weight="0.32990506" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2661623" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2661623" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.61620975" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.33730632" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -367,11 +378,6 @@
         <state relative-caret-position="57">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
@@ -634,6 +640,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
