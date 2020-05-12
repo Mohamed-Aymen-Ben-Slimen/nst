@@ -20,7 +20,7 @@ const MainComponent = () => {
                 <Switch>
 
                     <Route path={'/neural_style_transfer'} component={NSTComponent}/>
-                    <Route path={'/'} exact component={LandingPageComponent}/>
+                    <Route path={'/'}  component={LandingPageComponent}/>
 
 
 
